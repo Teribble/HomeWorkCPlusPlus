@@ -1,0 +1,12 @@
+-------------------
+/*dfgdfgdfgg				
+sadasdsads*/ddj
+// ghbdtn
+if(/*sdfsaffsfsdfsadfasdfsadfsdaf*/strings[ i ][ k - 1 ] == '*' && strings[ i ][ k ] == '/') // shkjdfgfs
+{
+//asldkjaksld
+flag = false;
+strings[ i ].erase( /*vcxcv*/0 , k + 1 );
+bufferArray[ i ] = strings[ i ];
+break;
+}
