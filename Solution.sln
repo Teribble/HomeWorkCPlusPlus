@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssociativeArray", "Associa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWorkSeven", "HomeWorkSeven\HomeWorkSeven.vcxproj", "{04B01874-D061-4BA3-857F-FDE7F7FD94E6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "myJSONParse", "myJSONParse\myJSONParse.vcxproj", "{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{04B01874-D061-4BA3-857F-FDE7F7FD94E6}.Release|x64.Build.0 = Release|x64
 		{04B01874-D061-4BA3-857F-FDE7F7FD94E6}.Release|x86.ActiveCfg = Release|Win32
 		{04B01874-D061-4BA3-857F-FDE7F7FD94E6}.Release|x86.Build.0 = Release|Win32
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Debug|x64.ActiveCfg = Debug|x64
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Debug|x64.Build.0 = Debug|x64
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Debug|x86.ActiveCfg = Debug|Win32
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Debug|x86.Build.0 = Debug|Win32
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Release|x64.ActiveCfg = Release|x64
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Release|x64.Build.0 = Release|x64
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Release|x86.ActiveCfg = Release|Win32
+		{61A5DF95-1AAA-4C9A-BF1E-FE5EFBE70E4F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
