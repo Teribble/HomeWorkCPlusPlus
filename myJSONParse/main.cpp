@@ -1,9 +1,11 @@
-#include <iostream>
+#include "Group.h"
 
-int main( std::string args[] )
+
+int main()
 {
+	setlocale( 0 , "rus" );
 
 
-
+	
 	return 0;
 }
