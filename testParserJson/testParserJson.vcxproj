@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9b89b28e-ebe6-4c44-842b-d9a4de66583a}</ProjectGuid>
-    <RootNamespace>JSON</RootNamespace>
+    <ProjectGuid>{311ff3ec-9d70-4ca5-871c-ca78fc240f48}</ProjectGuid>
+    <RootNamespace>testParserJson</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,10 +139,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <None Include="group.json" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="myHeader.h" />
+    <ClCompile Include="Groupss.cpp" />
+    <ClCompile Include="JSONParsing.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Marks.cpp" />
+    <ClCompile Include="Students.cpp" />
+    <ClCompile Include="Subjects.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Groupss.h" />
+    <ClInclude Include="HelperInclude.h" />
+    <ClInclude Include="JSONParsing.h" />
+    <ClInclude Include="Marks.h" />
+    <ClInclude Include="Students.h" />
+    <ClInclude Include="Subjects.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
