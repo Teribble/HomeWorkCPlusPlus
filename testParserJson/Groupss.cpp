@@ -1,4 +1,4 @@
-#include "Groupss.h"
+ï»¿#include "Groupss.h"
 
 Groupss::Groupss()
 {
@@ -121,7 +121,7 @@ void Groupss::initJson( std::string stringJson )
 				}
 				else
 				{
-					//Ñ×ÅÒ×ÈÊ ÄÂÀ ÂÌÅÑÒÎ 3
+					//Ğ¡Ğ§Ğ•Ğ¢Ğ§Ğ˜Ğš Ğ”Ğ’Ğ Ğ’ĞœĞ•Ğ¡Ğ¢Ğ 3
 					buffer[counter++] = JSONParsing::getValueInt( token );
 					token = strtok( NULL , "[,]" );
 					if(counter >= Groupss::counterStudents)

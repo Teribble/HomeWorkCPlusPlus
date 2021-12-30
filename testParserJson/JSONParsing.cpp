@@ -1,4 +1,4 @@
-#include "JSONParsing.h"
+﻿#include "JSONParsing.h"
 
 int JSONParsing::myFind(const std::string str , const std::string key )
 {
