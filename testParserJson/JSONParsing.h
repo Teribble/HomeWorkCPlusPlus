@@ -1,23 +1,23 @@
-#pragma once
+п»ї#pragma once
 #include "HelperInclude.h"
 
 class JSONParsing
 {
 public:
 #pragma region Methods
-	// Ищет первое вхождение подстроки в строку
+	// РС‰РµС‚ РїРµСЂРІРѕРµ РІС…РѕР¶РґРµРЅРёРµ РїРѕРґСЃС‚СЂРѕРєРё РІ СЃС‚СЂРѕРєСѓ
 	static int myFind(const std::string str , const std::string key );
 
-	// Возращает истину, если подстрока входит в подстроку иначе, ложь
+	// Р’РѕР·СЂР°С‰Р°РµС‚ РёСЃС‚РёРЅСѓ, РµСЃР»Рё РїРѕРґСЃС‚СЂРѕРєР° РІС…РѕРґРёС‚ РІ РїРѕРґСЃС‚СЂРѕРєСѓ РёРЅР°С‡Рµ, Р»РѕР¶СЊ
 	static bool myFindBool(const std::string str , const std::string key );
 	
-	// Парсит json файл в строку
+	// РџР°СЂСЃРёС‚ json С„Р°Р№Р» РІ СЃС‚СЂРѕРєСѓ
 	static std::string parseToString( const std::string file );
 
-	// Ищет значение по ключу
+	// РС‰РµС‚ Р·РЅР°С‡РµРЅРёРµ РїРѕ РєР»СЋС‡Сѓ
 	static std::string getValue( const std::string stroke , const std::string key );
 
-	// Ищет интовое значение в строке
+	// РС‰РµС‚ РёРЅС‚РѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ СЃС‚СЂРѕРєРµ
 	static int getValueInt( const std::string stroke );
 #pragma endregion Methods
 };

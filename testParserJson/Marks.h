@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 class Marks
 {
 public:
@@ -14,7 +14,7 @@ public:
 	int getCounterMarks();
 #pragma endregion Setters and Getters
 
-	// Метод созданный для проверки меня же :D
+	// РњРµС‚РѕРґ СЃРѕР·РґР°РЅРЅС‹Р№ РґР»СЏ РїСЂРѕРІРµСЂРєРё РјРµРЅСЏ Р¶Рµ :D
 	void printMarks();
 
 private:

@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "HelperInclude.h"
 
 class Groupss
@@ -21,30 +21,30 @@ public:
 #pragma endregion Set and Add
 
 #pragma region MethodsClass
-	// Заполнение объекта из строки, которая запарсена из json
+	// Р—Р°РїРѕР»РЅРµРЅРёРµ РѕР±СЉРµРєС‚Р° РёР· СЃС‚СЂРѕРєРё, РєРѕС‚РѕСЂР°СЏ Р·Р°РїР°СЂСЃРµРЅР° РёР· json
 	void initJson( std::string stringJson );
 
-	// Печать группы студентов
+	// РџРµС‡Р°С‚СЊ РіСЂСѓРїРїС‹ СЃС‚СѓРґРµРЅС‚РѕРІ
 	void printGroup();
 #pragma endregion MethodsClass
 
 private:
 #pragma region Field
-	// Имя группы
+	// РРјСЏ РіСЂСѓРїРїС‹
 	std::string name;
 
-	// Массив студентов
+	// РњР°СЃСЃРёРІ СЃС‚СѓРґРµРЅС‚РѕРІ
 	Students* students;
 
-	// Массив предметов
+	// РњР°СЃСЃРёРІ РїСЂРµРґРјРµС‚РѕРІ
 	Subjects* subjects;
 
-	// Массив, массивов оценок
+	// РњР°СЃСЃРёРІ, РјР°СЃСЃРёРІРѕРІ РѕС†РµРЅРѕРє
 	Marks* marks;
 #pragma endregion Field
 
 #pragma region Helper Fields
-	// Счетчики полей
+	// РЎС‡РµС‚С‡РёРєРё РїРѕР»РµР№
 	int counterStudents;
 	int counterSubjects;
 	int counterMarks;

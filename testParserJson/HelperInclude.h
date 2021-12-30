@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -6,4 +6,4 @@
 #include "Subjects.h"
 #include "Marks.h"
 #include "JSONParsing.h"
-#pragma warning(disable : 4996) //исключаю ошибку, которая не дает использовать strtok
+#pragma warning(disable : 4996) //РёСЃРєР»СЋС‡Р°СЋ РѕС€РёР±РєСѓ, РєРѕС‚РѕСЂР°СЏ РЅРµ РґР°РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ strtok
