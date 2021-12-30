@@ -1,5 +1,6 @@
 ﻿#include "Groupss.h"
 
+// https://github.com/Teribble/HomeWork/tree/master/testParserJson
 // Написать свой псевдопарсер, с помощью которого можно создать описанный объект в json файле
 // Задание очень понравилось, хотя много было психов :D
 
