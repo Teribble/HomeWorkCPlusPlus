@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWorkSeven", "HomeWorkSe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testParserJson", "testParserJson\testParserJson.vcxproj", "{311FF3EC-9D70-4CA5-871C-CA78FC240F48}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NewYears", "NewYears\NewYears.vcxproj", "{46329352-EAFD-4F1E-A469-B1CE89386941}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{311FF3EC-9D70-4CA5-871C-CA78FC240F48}.Release|x64.Build.0 = Release|x64
 		{311FF3EC-9D70-4CA5-871C-CA78FC240F48}.Release|x86.ActiveCfg = Release|Win32
 		{311FF3EC-9D70-4CA5-871C-CA78FC240F48}.Release|x86.Build.0 = Release|Win32
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Debug|x64.ActiveCfg = Debug|x64
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Debug|x64.Build.0 = Debug|x64
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Debug|x86.ActiveCfg = Debug|Win32
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Debug|x86.Build.0 = Debug|Win32
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Release|x64.ActiveCfg = Release|x64
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Release|x64.Build.0 = Release|x64
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Release|x86.ActiveCfg = Release|Win32
+		{46329352-EAFD-4F1E-A469-B1CE89386941}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
