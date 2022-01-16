@@ -1,6 +1,6 @@
-#pragma once
-// При компиляции возникает ошибка, что используется старый функциона
-#pragma warning (disable: 4996) // - решает проблему
+п»ї#pragma once
+// РџСЂРё РєРѕРјРїРёР»СЏС†РёРё РІРѕР·РЅРёРєР°РµС‚ РѕС€РёР±РєР°, С‡С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ СЃС‚Р°СЂС‹Р№ С„СѓРЅРєС†РёРѕРЅР°
+#pragma warning (disable: 4996) // - СЂРµС€Р°РµС‚ РїСЂРѕР±Р»РµРјСѓ
 
 #pragma region include
 
@@ -26,7 +26,7 @@
 
 #pragma region function
 
-// Функция установки курсора по заданным координатам (include windows.h)
+// Р¤СѓРЅРєС†РёСЏ СѓСЃС‚Р°РЅРѕРІРєРё РєСѓСЂСЃРѕСЂР° РїРѕ Р·Р°РґР°РЅРЅС‹Рј РєРѕРѕСЂРґРёРЅР°С‚Р°Рј (include windows.h)
 void setCursorPosition( const int X , const int Y )
 {
     HANDLE console = GetStdHandle( STD_OUTPUT_HANDLE );
@@ -34,7 +34,7 @@ void setCursorPosition( const int X , const int Y )
     SetConsoleCursorPosition( console , cursorPosition );
 }
 
-// Функция которая удаляет курсор из консоли (include windows.h)
+// Р¤СѓРЅРєС†РёСЏ РєРѕС‚РѕСЂР°СЏ СѓРґР°Р»СЏРµС‚ РєСѓСЂСЃРѕСЂ РёР· РєРѕРЅСЃРѕР»Рё (include windows.h)
 void deleteCursor()
 {
     HANDLE console = GetStdHandle( STD_OUTPUT_HANDLE );
@@ -42,7 +42,7 @@ void deleteCursor()
     SetConsoleCursorInfo( console , &info );
 }
 
-// Функция, возращающая указатель на массив в котором содержится текущее время (include ctime)
+// Р¤СѓРЅРєС†РёСЏ, РІРѕР·СЂР°С‰Р°СЋС‰Р°СЏ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ РІ РєРѕС‚РѕСЂРѕРј СЃРѕРґРµСЂР¶РёС‚СЃСЏ С‚РµРєСѓС‰РµРµ РІСЂРµРјСЏ (include ctime)
 char* printCurrentTime()
 {
     time_t now = time( NULL );
