@@ -19,8 +19,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testParserJson", "testParse
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NewYears", "NewYears\NewYears.vcxproj", "{46329352-EAFD-4F1E-A469-B1CE89386941}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QueuePrinter", "QueuePrinter\QueuePrinter.vcxproj", "{85B1FAED-F28A-4ED0-AD09-2B8D9A0EE737}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
