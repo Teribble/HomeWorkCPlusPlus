@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testParserJson", "testParse
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NewYears", "NewYears\NewYears.vcxproj", "{46329352-EAFD-4F1E-A469-B1CE89386941}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Printer", "Printer\Printer.vcxproj", "{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,14 +93,14 @@ Global
 		{46329352-EAFD-4F1E-A469-B1CE89386941}.Release|x64.Build.0 = Release|x64
 		{46329352-EAFD-4F1E-A469-B1CE89386941}.Release|x86.ActiveCfg = Release|Win32
 		{46329352-EAFD-4F1E-A469-B1CE89386941}.Release|x86.Build.0 = Release|Win32
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Debug|x64.ActiveCfg = Debug|x64
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Debug|x64.Build.0 = Debug|x64
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Debug|x86.ActiveCfg = Debug|Win32
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Debug|x86.Build.0 = Debug|Win32
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Release|x64.ActiveCfg = Release|x64
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Release|x64.Build.0 = Release|x64
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Release|x86.ActiveCfg = Release|Win32
-		{065BE2C8-EF4A-4CBD-896F-BA408702D999}.Release|x86.Build.0 = Release|Win32
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Debug|x64.ActiveCfg = Debug|x64
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Debug|x64.Build.0 = Debug|x64
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Debug|x86.ActiveCfg = Debug|Win32
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Debug|x86.Build.0 = Debug|Win32
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Release|x64.ActiveCfg = Release|x64
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Release|x64.Build.0 = Release|x64
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Release|x86.ActiveCfg = Release|Win32
+		{6E2F0049-B35A-4DDF-ADC3-DEFA38DA2519}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
