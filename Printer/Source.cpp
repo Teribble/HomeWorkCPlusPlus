@@ -1,4 +1,5 @@
-﻿#include "Printer.h"
+// ДОБАВИТЬ КОНСТРУКТОР КОПИРОВАНИЯ И ПЕРЕГРУЗКУ ОПЕРАТОРА РАВНО!
+#include "Printer.h"
 #include <conio.h>
 #include "Helper_fail/Helper.h"
 
