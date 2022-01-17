@@ -1,5 +1,6 @@
 ﻿#pragma once
-#include <iostream>
+#include "Statistics.h"
+
 template <typename T>
 class Printer
 {
