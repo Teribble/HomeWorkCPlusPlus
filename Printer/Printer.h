@@ -24,6 +24,8 @@ public:
 	int size();
 	// Возращает время добавления
 	char* getCurrentTime();
+	// Показывает очередь
+	void show();
 
 #pragma endregion Methods
 
@@ -67,7 +69,7 @@ bool Printer<T>::isEmpty()
 template <typename T>
 bool Printer<T>::isFull()
 {
-	maxSizeQueue == currentSize;
+	return maxSizeQueue == currentSize;
 }
 template <typename T>
 void Printer<T>::clear()
@@ -107,7 +109,35 @@ T Printer<T>::pop()
 
 		for(size_t i = 0; i < currentSize; i++)
 		{
-			if(max_pri < )
+			if (max_pri < priority[i]) {
+				max_pri = priority[i];
+				pos_max_pri = i;
+			}
+		}
+
+		T temp = wait[pos_max_pri];
+
+		for (size_t i = pos_max_pri; i < currentSize - 1; i++)
+		{
+			wait[i] = wait[i + 1];
+			priority[i] = priority[i + 1];
+			addingTime[i] = addingTime[i + 1];
+		}
+
+		currentSize--;
+
+		return temp;
+	}
+}
+template <typename T>
+void Printer<T>::show() 
+{
+	if (!isEmpty()) 
+	{
+		for (size_t i = 0; i < currentSize; i++)
+		{
+			std::cout << "user: " << wait[i] << " " << "	priority: " << priority[i] << "    data: " << addingTime[i] << std::endl;
 		}
 	}
+	
 }

@@ -1,5 +1,5 @@
 ﻿#pragma once
-// При компиляции возникает ошибка, что используется старый функциона
+// При компиляции возникает ошибка, что используется старый функционал
 #pragma warning (disable: 4996) // - решает проблему
 
 #pragma region include
@@ -48,6 +48,17 @@ char* printCurrentTime()
     time_t now = time( NULL );
     char* time = ctime( &now );
     return time;
+}
+
+void loadingBar() 
+{
+    std::cout << "Loading...";
+    for (int i = 0; i < 25; i++)
+    {
+        Sleep(100);
+        std::cout << TEXT_RED << (char)219 << TEXT_RESET;
+    }
+        std::cout << TEXT_GREEN << "COMPLATE" << TEXT_RESET << std::endl;
 }
 
 
