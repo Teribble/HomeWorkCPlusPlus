@@ -1,24 +1,24 @@
-#pragma once
+п»ї#pragma once
 #include "Helper_fail/Helper.h"
 #include "Printer.h"
 
 #define KEY_ONE 49
 #define KEY_TWO 50
 #define KEY_THREE 51
-#define Three_second 300 //Три секунды
+#define Three_second 300 //РўСЂРё СЃРµРєСѓРЅРґС‹
 
 class Menu
 {
 public:
-	// Показать статус
+	// РџРѕРєР°Р·Р°С‚СЊ СЃС‚Р°С‚СѓСЃ
 	static void showStatus( std::string status );
-	// Показать панель действий
+	// РџРѕРєР°Р·Р°С‚СЊ РїР°РЅРµР»СЊ РґРµР№СЃС‚РІРёР№
 	static void showActionBar();
-	// Показать заголовок базовой таблицы
+	// РџРѕРєР°Р·Р°С‚СЊ Р·Р°РіРѕР»РѕРІРѕРє Р±Р°Р·РѕРІРѕР№ С‚Р°Р±Р»РёС†С‹
 	static void showTableHeaderBaseQueue();
-	// Показать заголовок таблицы статистики
+	// РџРѕРєР°Р·Р°С‚СЊ Р·Р°РіРѕР»РѕРІРѕРє С‚Р°Р±Р»РёС†С‹ СЃС‚Р°С‚РёСЃС‚РёРєРё
 	static void showTableHeaderStatQueue();
-	// Выполняем функцию по нажатой кнопки
+	// Р’С‹РїРѕР»РЅСЏРµРј С„СѓРЅРєС†РёСЋ РїРѕ РЅР°Р¶Р°С‚РѕР№ РєРЅРѕРїРєРё
 	static void pressKeyActionBar( Printer<std::string> &printer , int key );
 };
 
