@@ -5,6 +5,7 @@
 #define KEY_ONE 49
 #define KEY_TWO 50
 #define KEY_THREE 51
+#define KEY_FOUR 52
 #define Three_second 300 //Три секунды
 
 class Menu

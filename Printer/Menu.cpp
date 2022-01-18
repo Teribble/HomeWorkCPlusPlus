@@ -1,5 +1,7 @@
 ﻿#include "Menu.h"
 
+#define KEY_THREE 51
+
 void Menu::showStatus( std::string status )
 {
 	hl::setCursorPosition( ZERO, NINE );
@@ -11,7 +13,7 @@ void Menu::showActionBar()
 	hl::setCursorPosition( ZERO , TEN );
 	std::cout << "1: Add admin" << std::endl;
 	std::cout << "2: Add user" << std::endl;
-	std::cout << "3: Delete max pri" << std::endl;
+	std::cout << "3: Start print" << std::endl;
 }
 
 void Menu::showTableHeaderBaseQueue()
@@ -94,11 +96,17 @@ void Menu::pressKeyActionBar( Printer<std::string>& printer , int key )
 				Menu::showActionBar();
 				Menu::showTableHeaderStatQueue();
 				printer.showStatisticsQueue();
+				if(!printer.isEmpty())
+				{
+					pressKeyActionBar( printer , KEY_THREE );
+				}
 				break;
 			}
 			else
 			{
 				Menu::showStatus( "Queue is empty" );
 			}
+		case KEY_FOUR:
+			system( "PAUSE" );
 	}
 }
