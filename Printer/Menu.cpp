@@ -106,7 +106,5 @@ void Menu::pressKeyActionBar( Printer<std::string>& printer , int key )
 			{
 				Menu::showStatus( "Queue is empty" );
 			}
-		case KEY_FOUR:
-			system( "PAUSE" );
 	}
 }
