@@ -1,7 +1,7 @@
 #include "Helper.h"
 
-#define BASE_OF_WORKERS "Workers.txt"
-#define BASE_OF_CLIENTS "Clients.txt"
+#define BASE_OF_WORKERS "Base/Workers.txt"
+#define BASE_OF_CLIENTS "Base/Clients.txt"
 
 int main()
 {
