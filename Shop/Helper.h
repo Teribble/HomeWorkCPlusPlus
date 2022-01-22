@@ -13,12 +13,14 @@ enum Number
 
 #include <iostream>
 #include <windows.h>
-#include <ctime>
 #include <conio.h>
 #include <iomanip>
+#include <fstream>
+#include <string>
+#include <ctime>
 
 #pragma endregion include
-namespace hl
+namespace Helper
 {
 #pragma region Text_color
 
@@ -81,9 +83,46 @@ namespace hl
         MoveWindow( hWindowConsole , r.left , r.top , width , height , TRUE );
     }
 
+    inline int getCounterLineFile( std::string file )
+    {
+        int counter = 0;
+
+        std::ifstream ot;
+        ot.open( file );
+        std::string buffer;
+        if(ot.is_open())
+        {
+            while(getline( ot , buffer ))
+            {
+                counter++;
+            }
+            ot.close();
+            return counter;
+        }
+    }
+
     inline int getRandomInt( int min , int max )
     {
         return min + rand() % ( max - min + 1 );
+    }
+
+    inline std::string getRandomLine( std::string file )
+    {
+        // рандомное число
+        int randomInt = getRandomInt( ONE , getCounterLineFile( file ) );
+
+        std::ifstream in;
+        in.open( file );
+        std::string line;
+        if(in.is_open())
+        {
+            for(int i = 0; i < randomInt; i++)
+            {
+                getline( in , line );
+            }
+        }
+        in.close();
+        return line;
     }
 
 #pragma endregion function
