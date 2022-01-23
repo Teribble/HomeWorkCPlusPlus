@@ -8,7 +8,9 @@
 //Но у заказов на ремонт есть еще срок выполнения.
 //Магазин хранит историю заказов , список работников и клиентов.
 
-//
+//https://github.com/Teribble/HomeWorkCPlusPlus/tree/master/Shop
+
+#pragma region include
 #include "Client.h"
 #include "Worker.h"
 #include "Salesman.h"
@@ -17,6 +19,7 @@
 #include "RepairOrder.h"
 #include "Shop.h"
 #include "Menu.h"
+#pragma endregion include
 
 #define BASE_OF_WORKERS "Base/Workers.txt"
 #define BASE_OF_CLIENTS "Base/Clients.txt"
