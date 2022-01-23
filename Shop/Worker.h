@@ -1,4 +1,5 @@
 ﻿#pragma once
+#pragma region unclude and define
 #include "Human.h"
 #include "SalesOrder.h"
 #include "RepairOrder.h"
@@ -6,6 +7,7 @@
 
 #define BASE_OF_WORKERS "Base/Workers.txt"
 #define BASE_OF_CLIENTS "Base/Clients.txt"
+#pragma endregion unclude and define
 
 class Worker : public Human
 {

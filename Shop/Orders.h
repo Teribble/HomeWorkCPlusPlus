@@ -22,7 +22,7 @@ public:
 	std::string getNameClient() const;
 	// Возращает цену
 	double getPrice() const;
-
+	// Возращает строку со сроком работы
 	std::string getPeriodOfExecution() const;
 
 #pragma endregion Methods
@@ -30,7 +30,7 @@ public:
 
 #pragma region Fields
 protected:
-
+	// Срок работы
 	std::string periodOfExecution;
 	
 private:
