@@ -1,13 +1,13 @@
-#pragma once
+п»ї#pragma once
 #include "Orders.h"
 
-// Производный класс "Чек продавца" от "Чека"
+// РџСЂРѕРёР·РІРѕРґРЅС‹Р№ РєР»Р°СЃСЃ "Р§РµРє РїСЂРѕРґР°РІС†Р°" РѕС‚ "Р§РµРєР°"
 class SalesOrder : public Orders
 {
 public:
 #pragma region CTOR
 
-	// Конструктор
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	SalesOrder( double price , std::string nameWorker , std::string nameClient ) :
 		Orders( price , nameWorker , nameClient )
 	{

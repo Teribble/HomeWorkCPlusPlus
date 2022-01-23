@@ -1,4 +1,4 @@
-#include "Orders.h"
+п»ї#include "Orders.h"
 
 Orders::Orders()
 {
@@ -13,7 +13,7 @@ Orders::Orders( double price , std::string nameWorker , std::string nameClient )
 	this->price = price;
 	this->nameClient = nameClient;
 	this->nameWorker = nameWorker;
-	this->periodOfExecution = "не указан";
+	this->periodOfExecution = "РЅРµ СѓРєР°Р·Р°РЅ";
 }
 
 std::string Orders::getNameWorker() const

@@ -1,6 +1,6 @@
-#pragma once
-// При компиляции возникает ошибка, что используется старый функционал
-#pragma warning (disable: 4996) // - решает проблему
+п»ї#pragma once
+// РџСЂРё РєРѕРјРїРёР»СЏС†РёРё РІРѕР·РЅРёРєР°РµС‚ РѕС€РёР±РєР°, С‡С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ СЃС‚Р°СЂС‹Р№ С„СѓРЅРєС†РёРѕРЅР°Р»
+#pragma warning (disable: 4996) // - СЂРµС€Р°РµС‚ РїСЂРѕР±Р»РµРјСѓ
 
 enum Number
 {
@@ -38,7 +38,7 @@ namespace Helper
 
 #pragma region function
 
-// Функция установки курсора по заданным координатам (include windows.h)
+// Р¤СѓРЅРєС†РёСЏ СѓСЃС‚Р°РЅРѕРІРєРё РєСѓСЂСЃРѕСЂР° РїРѕ Р·Р°РґР°РЅРЅС‹Рј РєРѕРѕСЂРґРёРЅР°С‚Р°Рј (include windows.h)
     inline void setCursorPosition( const int X , const int Y )
     {
         HANDLE console = GetStdHandle( STD_OUTPUT_HANDLE );
@@ -46,7 +46,7 @@ namespace Helper
         SetConsoleCursorPosition( console , cursorPosition );
     }
 
-    // Функция которая удаляет курсор из консоли (include windows.h)
+    // Р¤СѓРЅРєС†РёСЏ РєРѕС‚РѕСЂР°СЏ СѓРґР°Р»СЏРµС‚ РєСѓСЂСЃРѕСЂ РёР· РєРѕРЅСЃРѕР»Рё (include windows.h)
     inline void deleteCursor()
     {
         HANDLE console = GetStdHandle( STD_OUTPUT_HANDLE );
@@ -54,7 +54,7 @@ namespace Helper
         SetConsoleCursorInfo( console , &info );
     }
 
-    // Функция, возращающая указатель на массив в котором содержится текущее время (include ctime)
+    // Р¤СѓРЅРєС†РёСЏ, РІРѕР·СЂР°С‰Р°СЋС‰Р°СЏ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ РІ РєРѕС‚РѕСЂРѕРј СЃРѕРґРµСЂР¶РёС‚СЃСЏ С‚РµРєСѓС‰РµРµ РІСЂРµРјСЏ (include ctime)
     inline char* printCurrentTime()
     {
         time_t now = time( NULL );
@@ -62,7 +62,7 @@ namespace Helper
         return time;
     }
 
-    // Полоса загрузки
+    // РџРѕР»РѕСЃР° Р·Р°РіСЂСѓР·РєРё
     inline void loadingBar()
     {
         std::cout << "Loading...";
@@ -74,7 +74,7 @@ namespace Helper
         std::cout << TEXT_GREEN << "COMPLATE" << TEXT_RESET << std::endl;
     }
 
-    // Функция для ограничения размера окна консоли(width, height)
+    // Р¤СѓРЅРєС†РёСЏ РґР»СЏ РѕРіСЂР°РЅРёС‡РµРЅРёСЏ СЂР°Р·РјРµСЂР° РѕРєРЅР° РєРѕРЅСЃРѕР»Рё(width, height)
     inline void setWindowSize( int width , int height )
     {
         HWND hWindowConsole = GetConsoleWindow();
@@ -108,7 +108,7 @@ namespace Helper
 
     inline std::string getRandomLine( std::string file )
     {
-        // рандомное число
+        // СЂР°РЅРґРѕРјРЅРѕРµ С‡РёСЃР»Рѕ
         int randomInt = getRandomInt( ONE , getCounterLineFile( file ) );
 
         std::ifstream in;

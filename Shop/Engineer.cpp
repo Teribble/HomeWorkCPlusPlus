@@ -1,4 +1,4 @@
-#include "Engineer.h"
+﻿#include "Engineer.h"
 
 std::string Engineer::getPeriodOfExecution() const
 {

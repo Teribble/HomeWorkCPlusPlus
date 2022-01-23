@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Human.h"
 #include "SalesOrder.h"
 #include "RepairOrder.h"
@@ -12,44 +12,44 @@ class Worker : public Human
 public:
 #pragma region CTOR and DCTOR
 
-	// Конструктор по умолчанию
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	Worker() : Human( "no name" )
 	{
-		schedule = "нет расписания";
+		schedule = "РЅРµС‚ СЂР°СЃРїРёСЃР°РЅРёСЏ";
 		order = nullptr;
 	}
 
-	// Конструктор с параментром
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµРЅС‚СЂРѕРј
 	Worker(std::string name) : Human(name)
 	{
-		schedule = "нет расписания";
+		schedule = "РЅРµС‚ СЂР°СЃРїРёСЃР°РЅРёСЏ";
 		order = nullptr;
 	}
-	// Деструктор
+	// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	~Worker();
 
-	// Возращает чек
+	// Р’РѕР·СЂР°С‰Р°РµС‚ С‡РµРє
 	Orders getOrder() const;
 
 #pragma endregion CTOR and DCTOR
 
 #pragma region Methods
 
-	// Возращает расписание
+	// Р’РѕР·СЂР°С‰Р°РµС‚ СЂР°СЃРїРёСЃР°РЅРёРµ
 	std::string getSchedule() const;
 
 protected:
 
-	// Оформить заказ
+	// РћС„РѕСЂРјРёС‚СЊ Р·Р°РєР°Р·
 	void ordering();
-	// Чек
+	// Р§РµРє
 	Orders* order;
 
 #pragma endregion Methods
 
 #pragma region Fields
 
-	// Расписание
+	// Р Р°СЃРїРёСЃР°РЅРёРµ
 	std::string schedule;
 
 #pragma endregion Fields

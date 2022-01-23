@@ -1,28 +1,28 @@
-#pragma once
+п»ї#pragma once
 #include "Helper.h"
 
-// Класс "Человека"
+// РљР»Р°СЃСЃ "Р§РµР»РѕРІРµРєР°"
 class Human
 {
 public:
 
 #pragma region CTOR
 
-	// Конструктор по умолчанию
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	Human();
 
-	// Конструктор с параметром
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂРѕРј
 	Human( std::string name );
 
 #pragma endregion CTOR
 
 #pragma region Methods
 
-	// Возращает имя человека
+	// Р’РѕР·СЂР°С‰Р°РµС‚ РёРјСЏ С‡РµР»РѕРІРµРєР°
 	std::string getName() const;
 protected:
 
-	// Инициализируем имя человека
+	// РРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РёРјСЏ С‡РµР»РѕРІРµРєР°
 	void setName();
 
 #pragma endregion Methods
@@ -30,7 +30,7 @@ protected:
 #pragma region Fields
 
 private:
-	// Имя
+	// РРјСЏ
 	std::string name;
 
 #pragma endregion Fields

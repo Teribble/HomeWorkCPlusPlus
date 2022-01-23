@@ -1,16 +1,16 @@
-#pragma once
+п»ї#pragma once
 #include "Human.h"
 
-// Производный класс "Клиент" от "Человека"
+// РџСЂРѕРёР·РІРѕРґРЅС‹Р№ РєР»Р°СЃСЃ "РљР»РёРµРЅС‚" РѕС‚ "Р§РµР»РѕРІРµРєР°"
 class Client : public Human
 {
 public:
 #pragma region CTOR
 
-	// Конструктор по умолчанию
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	Client() : Human( "no name" ){ }
 
-	// Конструктор с параметром
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂРѕРј
 	Client(std::string name) : Human(name){ }
 
 #pragma endregion CTOR

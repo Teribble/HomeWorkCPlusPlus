@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Orders.h"
 
 #define BASE_OF_PERIOD "Base/Period.txt"
@@ -8,11 +8,11 @@ class RepairOrder : public Orders
 public:
 #pragma region CTOR
 
-	// Конструктор с параметрами
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 	RepairOrder( double price , std::string nameWorker , std::string nameClient ) :
 		Orders( price , nameWorker , nameClient )
 	{
-		// Сразу же инициализируем период выполнения
+		// РЎСЂР°Р·Сѓ Р¶Рµ РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РїРµСЂРёРѕРґ РІС‹РїРѕР»РЅРµРЅРёСЏ
 		periodOfExecution = Helper::getRandomLine( BASE_OF_PERIOD );
 	}
 
@@ -20,7 +20,7 @@ public:
 
 #pragma region Methods
 
-	// Возращает период выполнения
+	// Р’РѕР·СЂР°С‰Р°РµС‚ РїРµСЂРёРѕРґ РІС‹РїРѕР»РЅРµРЅРёСЏ
 	std::string getPeriodOfExecution() const;
 
 #pragma endregion Methods

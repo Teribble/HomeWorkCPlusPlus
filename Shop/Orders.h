@@ -1,26 +1,26 @@
-#pragma once
+п»ї#pragma once
 #include "Helper.h"
 
-// Класс "Чек"
+// РљР»Р°СЃСЃ "Р§РµРє"
 class Orders
 {
 public:
 #pragma region CTOR
 
-	// Конструктор по умолчанию
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	Orders();
-	// Конструктор
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	Orders( double price , std::string nameWorker , std::string nameClient );
 
 #pragma endregion CTOR
 
 #pragma region Methods
 
-	// Возращает имя работника
+	// Р’РѕР·СЂР°С‰Р°РµС‚ РёРјСЏ СЂР°Р±РѕС‚РЅРёРєР°
 	std::string getNameWorker() const;
-	// Возращает имя клиента
+	// Р’РѕР·СЂР°С‰Р°РµС‚ РёРјСЏ РєР»РёРµРЅС‚Р°
 	std::string getNameClient() const;
-	// Возращает цену
+	// Р’РѕР·СЂР°С‰Р°РµС‚ С†РµРЅСѓ
 	double getPrice() const;
 
 	std::string getPeriodOfExecution() const;
@@ -34,11 +34,11 @@ protected:
 	std::string periodOfExecution;
 	
 private:
-	// Имя работника
+	// РРјСЏ СЂР°Р±РѕС‚РЅРёРєР°
 	std::string nameWorker;
-	// Имя клиента
+	// РРјСЏ РєР»РёРµРЅС‚Р°
 	std::string nameClient;
-	// Цена
+	// Р¦РµРЅР°
 	double price;
 
 #pragma endregion Fields

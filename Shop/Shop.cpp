@@ -1,4 +1,4 @@
-#include "Shop.h"
+ï»¿#include "Shop.h"
 
 Shop::Shop()
 {
@@ -49,12 +49,12 @@ void Shop::initiateASale( int valueOrdering )
 void Shop::showHistory()
 {
 	system( "cls" );
-	std::cout << std::right << std::setw( 83 ) << "Íàçâàíèå ìàãàçèíà: " << nameShop << std::endl << std::endl;
-	std::cout <<std::right<<std::setw(3)<<"¹" 
-		<< std::right << std::setw(40) << "Èìÿ êëèåíòà:"
-		<< std::right << std::setw( 40 ) << "Èìÿ ñîòðóäíèêà:"
-		<< std::right << std::setw( 10 ) << "Öåíà:"
-		<< std::right << std::setw( 35 ) << "Ñðîêè" << std::endl;
+	std::cout << std::right << std::setw( 83 ) << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°: " << nameShop << std::endl << std::endl;
+	std::cout <<std::right<<std::setw(3)<<"â„–" 
+		<< std::right << std::setw(40) << "Ð˜Ð¼Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°:"
+		<< std::right << std::setw( 40 ) << "Ð˜Ð¼Ñ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ°:"
+		<< std::right << std::setw( 10 ) << "Ð¦ÐµÐ½Ð°:"
+		<< std::right << std::setw( 35 ) << "Ð¡Ñ€Ð¾ÐºÐ¸" << std::endl;
 	std::cout << "--------------------------------------------------------------------------------------------------------------------------------" << std::endl;
 	for(size_t i = 0; i < this->history.size(); i++)
 	{
@@ -65,7 +65,7 @@ void Shop::showHistory()
 			<< std::right << std::setw( 35 ) << history[i].getPeriodOfExecution() << std::endl;
 	}
 	std::cout << "--------------------------------------------------------------------------------------------------------------------------------" << std::endl;
-	std::cout << "×òî áû âåðíóòüñÿ íàçàä íàæìèòå ëþáóþ êëàâèøó";
+	std::cout << "Ð§Ñ‚Ð¾ Ð±Ñ‹ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð°Ð·Ð°Ð´ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð»ÑŽÐ±ÑƒÑŽ ÐºÐ»Ð°Ð²Ð¸ÑˆÑƒ";
 	if(_getch())
 	{
 		menu();
@@ -75,8 +75,8 @@ void Shop::showHistory()
 void Shop::showClients()
 {
 	system( "cls" );
-	std::cout << std::right << std::setw( 3 ) << "¹"
-		<< std::right << std::setw( 40 ) << "Èìÿ êëèåíòà" << std::endl;
+	std::cout << std::right << std::setw( 3 ) << "â„–"
+		<< std::right << std::setw( 40 ) << "Ð˜Ð¼Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°" << std::endl;
 	std::cout << "-------------------------------------------" << std::endl;
 	for(int i = 0; i < this->client.size(); i++)
 	{
@@ -84,7 +84,7 @@ void Shop::showClients()
 			<< std::right << std::setw( 40 ) << client[i].getName() << std::endl;
 	}
 	std::cout << "-------------------------------------------" << std::endl;
-	std::cout << "×òî áû âåðíóòüñÿ íàçàä íàæìèòå ëþáóþ êëàâèøó";
+	std::cout << "Ð§Ñ‚Ð¾ Ð±Ñ‹ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð°Ð·Ð°Ð´ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð»ÑŽÐ±ÑƒÑŽ ÐºÐ»Ð°Ð²Ð¸ÑˆÑƒ";
 	if(_getch())
 	{
 		menu();
@@ -94,9 +94,9 @@ void Shop::showClients()
 void Shop::showWorkers()
 {
 	system( "cls" );
-	std::cout << std::right << std::setw( 3 ) << "¹"
-		<< std::right << std::setw( 40 ) << "Èìÿ ðàáîòíèêà:"
-		<< std::right << std::setw( 40 )<<"Ðàñïèñàíèå" << std::endl;
+	std::cout << std::right << std::setw( 3 ) << "â„–"
+		<< std::right << std::setw( 40 ) << "Ð˜Ð¼Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°:"
+		<< std::right << std::setw( 40 )<<"Ð Ð°ÑÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ" << std::endl;
 	std::cout << "------------------------------------------------------------------------------------" << std::endl;
 	for(size_t i = 0; i < this->worker.size(); i++)
 	{
@@ -105,7 +105,7 @@ void Shop::showWorkers()
 			<< std::right << std::setw( 40 ) << this->worker[ i ].getSchedule() << std::endl;
 	}
 	std::cout << "------------------------------------------------------------------------------------" << std::endl;
-	std::cout << "×òî áû âåðíóòüñÿ íàçàä íàæìèòå ëþáóþ êëàâèøó";
+	std::cout << "Ð§Ñ‚Ð¾ Ð±Ñ‹ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð°Ð·Ð°Ð´ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð»ÑŽÐ±ÑƒÑŽ ÐºÐ»Ð°Ð²Ð¸ÑˆÑƒ";
 	if(_getch())
 	{
 		menu();
@@ -115,9 +115,9 @@ void Shop::showWorkers()
 void Shop::menu()
 {
 	system( "cls" );
-	std::cout << "1: Äîáàâèòü 10 ïðîäàæ\n"
-		<< "2: Ïîêàçàòü ñòàòèñòèêó ìàãàçèíà\n"
-		<< "3: Ïîêàçàòü ñîòðóäíèêîâ\n"
-		<< "4: Ïîêàçàòü êëèåíòîâ\n"
-		<< "5: Âûõîä\n";
+	std::cout << "1: Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ 10 Ð¿Ñ€Ð¾Ð´Ð°Ð¶\n"
+		<< "2: ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°\n"
+		<< "3: ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð²\n"
+		<< "4: ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð²\n"
+		<< "5: Ð’Ñ‹Ñ…Ð¾Ð´\n";
 }

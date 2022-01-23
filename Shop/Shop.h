@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Client.h"
 #include "Salesman.h"
 #include "Engineer.h"
@@ -11,9 +11,9 @@ class Shop
 public:
 #pragma region CTOR
 
-	// Конструктор по умолчанию
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	Shop();
-	// Конструктор с параметрами
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 	Shop( std::string name );
 
 	void addClient(Client client);
