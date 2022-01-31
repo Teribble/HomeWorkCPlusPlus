@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleManagement", "Consol
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{E9D8CF9E-2A27-4174-94D3-B15573053667}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FoodDelivery", "FoodDelivery\FoodDelivery.vcxproj", "{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{E9D8CF9E-2A27-4174-94D3-B15573053667}.Release|x64.Build.0 = Release|x64
 		{E9D8CF9E-2A27-4174-94D3-B15573053667}.Release|x86.ActiveCfg = Release|Win32
 		{E9D8CF9E-2A27-4174-94D3-B15573053667}.Release|x86.Build.0 = Release|Win32
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Debug|x64.ActiveCfg = Debug|x64
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Debug|x64.Build.0 = Debug|x64
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Debug|x86.ActiveCfg = Debug|Win32
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Debug|x86.Build.0 = Debug|Win32
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Release|x64.ActiveCfg = Release|x64
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Release|x64.Build.0 = Release|x64
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Release|x86.ActiveCfg = Release|Win32
+		{174F83D4-7AEF-4A91-932D-2BD0ED3227D4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
