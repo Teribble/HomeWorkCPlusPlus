@@ -1,4 +1,4 @@
-#include "ConsoleManagement.h"
+﻿#include "ConsoleManagement.h"
 
 ConsoleManagement* ConsoleManagement::instance = nullptr;
 
